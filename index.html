@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hero Section</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+</head>
+
+<body>
+    <header class="fixed top-0 left-0 right-0 bg-white py-3 z-50" id="sticky-menu">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-between gap-x-8">
+                <a href="/">
+                    <img src="https://masco-html.netlify.app/assets/img/logo-blue-dark.png" alt="Masco" width="109"
+                        height="24">
+                </a>
+
+                <!-- Header Navigation -->
+                <div class="hidden lg:flex">
+                    <nav class="flex space-x-6">
+                        <div class="relative group">
+                            <a href="#" class="nav-link-item">Demo <i class="fa-solid fa-angle-down ml-1"></i></a>
+                            <ul class="absolute left-0 mt-2 hidden bg-white shadow-lg rounded-md group-hover:block">
+                                <li class="p-2 hover:bg-gray-100"><a href="/">Digital agency</a></li>
+                                <li class="p-2 hover:bg-gray-100"><a href="/index-2">Chat software</a></li>
+                                <li class="p-2 hover:bg-gray-100"><a href="/index-3">Fitness App</a></li>
+                                <li class="p-2 hover:bg-gray-100"><a href="/index-4">Online Courses</a></li>
+                                <li class="p-2 hover:bg-gray-100"><a href="/index-5">SEO Agency</a></li>
+                                <li class="p-2 hover:bg-gray-100"><a href="/index-6">Cold Email</a></li>
+                                <li class="p-2 hover:bg-gray-100"><a href="/index-7">Web Hosting</a></li>
+                                <li class="p-2 hover:bg-gray-100"><a href="/index-8">Startup</a></li>
+                                <li class="p-2 hover:bg-gray-100"><a href="/index-9">Tracking Software</a></li>
+                                <li class="p-2 hover:bg-gray-100"><a href="/index-10">AI Writing Tool</a></li>
+                                <li class="p-2 hover:bg-gray-100"><a href="/index-11">Website Builder</a></li>
+                                <li class="p-2 hover:bg-gray-100"><a href="/index-12">AI Photo Editor</a></li>
+                                <li class="p-2 hover:bg-gray-100"><a href="/index-13">Initial Coin Offering (ICO)</a>
+                                </li>
+                                <li class="p-2 hover:bg-gray-100"><a href="/index-14">AI Content Generator</a></li>
+                                <li class="p-2 hover:bg-gray-100"><a href="/index-15">IT Service</a></li>
+                            </ul>
+                        </div>
+                        <a class="nav-link-item" href="/about">About</a>
+                        <div class="relative group">
+                            <a href="#" class="nav-link-item">Services <i class="fa-solid fa-angle-down ml-1"></i></a>
+                            <ul class="absolute left-0 mt-2 hidden bg-white shadow-lg rounded-md group-hover:block">
+                                <li class="p-2 hover:bg-gray-100"><a href="/services">Services</a></li>
+                                <li class="p-2 hover:bg-gray-100"><a href="/service-details">Service Details</a></li>
+                            </ul>
+                        </div>
+                        <div class="relative group">
+                            <a href="#" class="nav-link-item">Pages <i class="fa-solid fa-angle-down ml-1"></i></a>
+                            <ul class="absolute left-0 mt-2 hidden bg-white shadow-lg rounded-md group-hover:block">
+                                <li class="relative group">
+                                    <a href="#" class="p-2 hover:bg-gray-100">Blogs <i
+                                            class="fa-solid fa-angle-right ml-1"></i></a>
+                                    <ul
+                                        class="absolute left-full top-0 mt-2 hidden bg-white shadow-lg rounded-md group-hover:block">
+                                        <li class="p-2 hover:bg-gray-100"><a href="/blog">Blogs</a></li>
+                                        <li class="p-2 hover:bg-gray-100"><a href="/blog-details">Blog Details</a></li>
+                                    </ul>
+                                </li>
+                                <li class="relative group">
+                                    <a href="#" class="p-2 hover:bg-gray-100">Team <i
+                                            class="fa-solid fa-angle-right ml-1"></i></a>
+                                    <ul
+                                        class="absolute left-full top-0 mt-2 hidden bg-white shadow-lg rounded-md group-hover:block">
+                                        <li class="p-2 hover:bg-gray-100"><a href="/teams">Teams</a></li>
+                                    </ul>
+                                </li>
+                                <li class="relative group">
+                                    <a href="#" class="p-2 hover:bg-gray-100">FAQ <i
+                                            class="fa-solid fa-angle-right ml-1"></i></a>
+                                    <ul
+                                        class="absolute left-full top-0 mt-2 hidden bg-white shadow-lg rounded-md group-hover:block">
+                                        <li class="p-2 hover:bg-gray-100"><a href="/faq">FAQ-1</a></li>
+                                        <li class="p-2 hover:bg-gray-100"><a href="/faq-2">FAQ-2</a></li>
+                                        <li class="p-2 hover:bg-gray-100"><a href="/faq-3">FAQ-3</a></li>
+                                        <li class="p-2 hover:bg-gray-100"><a href="/faq-4">FAQ-4</a></li>
+                                    </ul>
+                                </li>
+                                <li class="relative group">
+                                    <a href="#" class="p-2 hover:bg-gray-100">Portfolio <i
+                                            class="fa-solid fa-angle-right ml-1"></i></a>
+                                    <ul
+                                        class="absolute left-full top-0 mt-2 hidden bg-white shadow-lg rounded-md group-hover:block">
+                                        <li class="p-2 hover:bg-gray-100"><a href="/portfolio">Portfolio Classic</a>
+                                        </li>
+                                        <li class="p-2 hover:bg-gray-100"><a href="/portfolio-2">Portfolio Masonry</a>
+                                        </li>
+                                        <li class="p-2 hover:bg-gray-100"><a href="/portfolio-3">Portfolio Modern</a>
+                                        </li>
+                                        <li class="p-2 hover:bg-gray-100"><a href="/portfolio-4">Portfolio Minimal</a>
+                                        </li>
+                                        <li class="p-2 hover:bg-gray-100"><a href="/portfolio-details">Portfolio
+                                                Details</a></li>
+                                    </ul>
+                                </li>
+                                <li class="relative group">
+                                    <a href="#" class="p-2 hover:bg-gray-100">Pricing <i
+                                            class="fa-solid fa-angle-right ml-1"></i></a>
+                                    <ul
+                                        class="absolute left-full top-0 mt-2 hidden bg-white shadow-lg rounded-md group-hover:block">
+                                        <li class="p-2 hover:bg-gray-100"><a href="/pricing">Pricing-1</a></li>
+                                        <li class="p-2 hover:bg-gray-100"><a href="/pricing-2">Pricing-2</a></li>
+                                    </ul>
+                                </li>
+                                <li class="relative group">
+                                    <a href="#" class="p-2 hover:bg-gray-100">Careers <i
+                                            class="fa-solid fa-angle-right ml-1"></i></a>
+                                    <ul
+                                        class="absolute left-full top-0 mt-2 hidden bg-white shadow-lg rounded-md group-hover:block">
+                                        <li class="p-2 hover:bg-gray-100"><a href="/careers">Career</a></li>
+                                        <li class="p-2 hover:bg-gray-100"><a href="/career-details">Career Details</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="relative group">
+                                    <a href="#" class="p-2 hover:bg-gray-100">Utilities <i
+                                            class="fa-solid fa-angle-right ml-1"></i></a>
+                                    <ul
+                                        class="absolute left-full top-0 mt-2 hidden bg-white shadow-lg rounded-md group-hover:block">
+                                        <li class="p-2 hover:bg-gray-100"><a href="/login">Login</a></li>
+                                        <li class="p-2 hover:bg-gray-100"><a href="/signup">Signup</a></li>
+                                        <li class="p-2 hover:bg-gray-100"><a href="/reset-password">Reset Password</a>
+                                        </li>
+                                        <li class="p-2 hover:bg-gray-100"><a href="/coming-soon">Coming Soon</a></li>
+                                        <li class="p-2 hover:bg-gray-100"><a href="/error-404">Error 404</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            </ul>
+                            </li>
+                            <!-- <li class="relative group">
+                                <a href="#" class="nav-link-item">Contact <i
+                                        class="fa-solid fa-angle-down ml-1"></i></a>
+                                <ul class="absolute left-0 mt-2 hidden bg-white shadow-lg rounded-md group-hover:block">
+                                    <li class="p-2 hover:bg-gray-100"><a href="/contact">Contact-1</a></li>
+                                    <li class="p-2 hover:bg-gray-100"><a href="/contact-2">Contact-2</a></li>
+                                    <li class="p-2 hover:bg-gray-100"><a href="/contact-3">Contact-3</a></li>
+                                </ul>
+                            </li> -->
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+                <!-- Header Navigation -->
+
+                <!-- Header User Event -->
+                <div class="hidden lg:flex items-center gap-6">
+                    <a href="/login" class="hover:text-blue-600">Login</a>
+                    <a href="/signup"
+                        class="btn bg-blue-600 text-white rounded-full py-2 px-6 transition duration-300 ease-in-out hover:bg-blue-700 transform hover:scale-105">Sign
+                        up free</a>
+                </div>
+
+                <div class="lg:hidden">
+                    <button id="openBtn" class="hamburger-menu mobile-menu-trigger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="relative overflow-hidden bg-gray-100 py-20 md:py-36 lg:py-40 xl:py-44">
+        <div class="container mx-auto px-4">
+            <div class="grid gap-10 lg:grid-cols-2 xl:grid-cols-[1.1fr_minmax(0,_1fr)]">
+                <div>
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl xl:text-8xl font-bold">
+                        We focus on growing your brand online
+                    </h1>
+                    <p class="mb-6">
+                        Build world-class digital products with a team of design, development & strategy experts. All in
+                        one place. We can provide your business with a variety of digital solutions.
+                    </p>
+                    <form action="#" method="post"
+                        class="relative flex items-center w-full sm:w-4/5 lg:w-auto lg:mt-5 lg:max-w-md">
+                        <input type="email" placeholder="Enter your email"
+                            class="w-full py-3 px-5 pr-40 rounded-full border border-black outline-none text-opacity-50">
+                        <button type="submit" class="absolute right-1 py-2 px-4 bg-blue-500 text-white rounded-full">
+                            Subscribe
+                        </button>
+                    </form>
+                    <div class="mt-5 text-sm flex items-center">
+                        <span class="mr-2 text-lg text-blue-500"><i class="fas fa-badge-check"></i></span>
+                        <span class="opacity-50">No credit card is required. You can cancel anytime</span>
+                    </div>
+                </div>
+                <div class="flex items-center justify-center relative">
+                    <img src="https://masco-html.netlify.app/assets/img/th-1/hero-img.jpg" alt="hero image"
+                        class="w-full h-auto max-w-lg">
+                    <a href="https://www.youtube.com/watch?v=3nQNiWdeH2Q"
+                        class="absolute flex items-center justify-center w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 bg-white text-blue-500 rounded-full"
+                        aria-label="video-play">
+                        <span class="text-2xl"><i class="fas fa-play"></i></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="py-16 md:py-20 lg:py-32">
+        <div class="container-default mx-auto">
+            <div
+                class="mb-10  text-center  text-xl font-semibold leading-[1.4] opacity-70 md:mb-16 lg:mb-20 lg:max-w-2xl">
+                From start-ups to Fortune 500, we partner with brands of all sizes
+            </div>
+            <div class="swiper brand-slider swiper-initialized swiper-horizontal swiper-backface-hidden">
+                <div class="swiper-wrapper" id="swiper-wrapper-be612a60d336c847">
+                    <div class="swiper-slide" style="width: 235px; margin-right: 90px;">
+                        <img src="https://masco-html.netlify.app/assets/img/th-1/brand-4.png" alt="brand-1" width="186"
+                            height="46" class="h-auto w-fit">
+                    </div>
+                    <div class="swiper-slide" style="width: 235px; margin-right: 90px;">
+                        <img src="https://masco-html.netlify.app/assets/img/th-1/brand-3.png" alt="brand-2" width="186"
+                            height="46" class="h-auto w-fit">
+                    </div>
+                    <div class="swiper-slide" style="width: 235px; margin-right: 90px;">
+                        <img src="https://masco-html.netlify.app/assets/img/th-1/brand-1.png" alt="brand-3" width="186"
+                            height="46" class="h-auto w-fit">
+                    </div>
+                    <div class="swiper-slide" style="width: 235px; margin-right: 90px;">
+                        <img src="https://masco-html.netlify.app/assets/img/th-1/brand-4.png" alt="brand-4" width="186"
+                            height="46" class="h-auto w-fit">
+                    </div>
+                    <div class="swiper-slide" style="width: 235px; margin-right: 90px;">
+                        <img src="https://masco-html.netlify.app/assets/img/th-1/brand-2.png" alt="brand-5" width="186"
+                            height="46" class="h-auto w-fit">
+                    </div>
+                    <div class="swiper-slide" style="width: 235px; margin-right: 90px;">
+                        <img src="assets/img/th-1/brand-1.png" alt="brand-1" width="186" height="46"
+                            class="h-auto w-fit">
+                    </div>
+                    <div class="swiper-slide swiper-slide-prev" style="width: 235px; margin-right: 90px;">
+                        <img src="assets/img/th-1/brand-2.png" alt="brand-2" width="186" height="46"
+                            class="h-auto w-fit">
+                    </div>
+                    <div class="swiper-slide swiper-slide-active" style="width: 235px; margin-right: 90px;">
+                        <img src="assets/img/th-1/brand-3.png" alt="brand-3" width="186" height="46"
+                            class="h-auto w-fit">
+                    </div>
+                    <div class="swiper-slide swiper-slide-next" style="width: 235px; margin-right: 90px;">
+                        <img src="assets/img/th-1/brand-4.png" alt="brand-4" width="186" height="46"
+                            class="h-auto w-fit">
+                    </div>
+                    <div class="swiper-slide" style="width: 235px; margin-right: 90px;">
+                        <img src="assets/img/th-1/brand-5.png" alt="brand-5" width="186" height="46"
+                            class="h-auto w-fit">
+                    </div>
+                </div>
+                <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+            </div>
+        </div>
+    </div>
+    <div class="section-space">
+        <div class="container-custom">
+            <div class="mb-16 xl:mb-20 jos" data-jos_once="1" data-jos_animation="fade-up"
+                data-jos_timingfunction="ease" data-jos_duration="700" data-jos_delay="500" data-jos_counter="1">
+                <div class="mx-auto max-w-590">
+                    <h2 class="text-center text-xl lg:text-2xl font-semibold leading-[1.33] tracking-[0.5px]">
+                        All the digital services that are convenient for you
+                    </h2>
+                </div>
+            </div>
+
+            <div class="grid gap-6 sm:grid-cols-2">
+                <div class="jos" data-jos_delay="0" data-jos_once="1" data-jos_animation="fade-up"
+                    data-jos_timingfunction="ease" data-jos_duration="700" data-jos_counter="1">
+                    <div
+                        class="group rounded-[10px] border border-[#E6E6E6] bg-white p-8 transition-all duration-300 ease-in-out hover:border-ColorOffWhite hover:bg-ColorOffWhite lg:p-10 h-full">
+                        <div class="flex flex-col gap-6 sm:gap-8 lg:flex-row items-center">
+                            <div class="relative mx-auto flex items-center justify-center w-16 lg:w-98">
+                                <img src="https://masco-html.netlify.app/assets/img/icons/icon-blue-service-1.svg"
+                                    alt="icon-service-1" width="98" height="100"
+                                    class="opacity-100 h-auto w-full transition-all duration-300 ease-in-out group-hover:opacity-0">
+                                <img src="https://masco-html.netlify.app/assets/img/icons/icon-blue-service-1.svg"
+                                    alt="icon-service-1" width="98" height="100"
+                                    class="absolute h-auto w-full opacity-0 transition-all duration-300 ease-in-out group-hover:opacity-100">
+                            </div>
+                            <div class="flex-1 text-center lg:text-left">
+                                <div
+                                    class="mb-4 text-xl lg:text-2xl font-semibold leading-[1.33] tracking-[0.5px] text-ColorBlack">
+                                    Branding &amp; Digital Strategies
+                                </div>
+                                <p class="mb-5 text-ColorBlack/80 line-clamp-2">
+                                    Brand strategy is all about developing a unique
+                                    identity that distinguishes your business from
+                                </p>
+                                <a href="/service-details"
+                                    class="inline-flex items-center gap-2 text-base font-bold text-ColorBlack group-hover:text-ColorBlue">
+                                    Find out more
+                                    <span class="transition-all duration-300 ease-in-out group-hover:translate-x-2">
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="jos" data-jos_delay="0.3" data-jos_once="1" data-jos_animation="fade-up"
+                    data-jos_timingfunction="ease" data-jos_duration="700" data-jos_counter="1">
+                    <div
+                        class="group rounded-[10px] border border-[#E6E6E6] bg-white p-8 transition-all duration-300 ease-in-out hover:border-ColorOffWhite hover:bg-ColorOffWhite lg:p-10 h-full">
+                        <div class="flex flex-col gap-6 sm:gap-8 lg:flex-row items-center">
+                            <div class="relative mx-auto flex items-center justify-center w-16 lg:w-98">
+                                <img src="https://masco-html.netlify.app/assets/img/icons/icon-blue-service-2.svg"
+                                    alt="icon-service-2" width="98" height="100"
+                                    class="opacity-100 h-auto w-full transition-all duration-300 ease-in-out group-hover:opacity-0">
+                                <img src="https://masco-html.netlify.app/assets/img/icons/icon-blue-service-2.svg"
+                                    alt="icon-service-2" width="98" height="100"
+                                    class="absolute h-auto w-full opacity-0 transition-all duration-300 ease-in-out group-hover:opacity-100">
+                            </div>
+                            <div class="flex-1 text-center lg:text-left">
+                                <div
+                                    class="mb-4 text-xl lg:text-2xl font-semibold leading-[1.33] tracking-[0.5px] text-ColorBlack">
+                                    Web Design &amp; App Development
+                                </div>
+                                <p class="mb-5 text-ColorBlack/80 line-clamp-2">
+                                    Web design &amp; development is an umbrella term that
+                                    describes the process of creating a website
+                                </p>
+                                <a href="/service-details"
+                                    class="inline-flex items-center gap-2 text-base font-bold text-ColorBlack group-hover:text-ColorBlue">
+                                    Find out more
+                                    <span class="transition-all duration-300 ease-in-out group-hover:translate-x-2">
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="jos" data-jos_delay="0.6" data-jos_once="1" data-jos_animation="fade-up"
+                    data-jos_timingfunction="ease" data-jos_duration="700" data-jos_counter="1">
+                    <div
+                        class="group rounded-[10px] border border-[#E6E6E6] bg-white p-8 transition-all duration-300 ease-in-out hover:border-ColorOffWhite hover:bg-ColorOffWhite lg:p-10 h-full">
+                        <div class="flex flex-col gap-6 sm:gap-8 lg:flex-row items-center">
+                            <div class="relative mx-auto flex items-center justify-center w-16 lg:w-98">
+                                <img src="https://masco-html.netlify.app/assets/img/icons/icon-blue-service-3.svg"
+                                    alt="icon-service-3" width="98" height="100"
+                                    class="opacity-100 h-auto w-full transition-all duration-300 ease-in-out group-hover:opacity-0">
+                                <img src="https://masco-html.netlify.app/assets/img/icons/icon-blue-service-3.svg"
+                                    alt="icon-service-3" width="98" height="100"
+                                    class="absolute h-auto w-full opacity-0 transition-all duration-300 ease-in-out group-hover:opacity-100">
+                            </div>
+                            <div class="flex-1 text-center lg:text-left">
+                                <div
+                                    class="mb-4 text-xl lg:text-2xl font-semibold leading-[1.33] tracking-[0.5px] text-ColorBlack">
+                                    Results-Driven Digital Marketing
+                                </div>
+                                <p class="mb-5 text-ColorBlack/80 line-clamp-2">
+                                    Digital marketing potential customers using the
+                                    internet &amp; other forms of digital communication
+                                </p>
+                                <a href="/service-details"
+                                    class="inline-flex items-center gap-2 text-base font-bold text-ColorBlack group-hover:text-ColorBlue">
+                                    Find out more
+                                    <span class="transition-all duration-300 ease-in-out group-hover:translate-x-2">
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="jos" data-jos_delay="0.9" data-jos_once="1" data-jos_animation="fade-up"
+                    data-jos_timingfunction="ease" data-jos_duration="700" data-jos_counter="1">
+                    <div
+                        class="group rounded-[10px] border border-[#E6E6E6] bg-white p-8 transition-all duration-300 ease-in-out hover:border-ColorOffWhite hover:bg-ColorOffWhite lg:p-10 h-full">
+                        <div class="flex flex-col gap-6 sm:gap-8 lg:flex-row items-center">
+                            <div class="relative mx-auto flex items-center justify-center w-16 lg:w-98">
+                                <img src="https://masco-html.netlify.app/assets/img/icons/icon-blue-service-4.svg"
+                                    alt="icon-service-4" width="98" height="100"
+                                    class="opacity-100 h-auto w-full transition-all duration-300 ease-in-out group-hover:opacity-0">
+                                <img src="https://masco-html.netlify.app/assets/img/icons/icon-blue-service-4.svg"
+                                    alt="icon-service-4" width="98" height="100"
+                                    class="absolute h-auto w-full opacity-0 transition-all duration-300 ease-in-out group-hover:opacity-100">
+                            </div>
+                            <div class="flex-1 text-center lg:text-left">
+                                <div
+                                    class="mb-4 text-xl lg:text-2xl font-semibold leading-[1.33] tracking-[0.5px] text-ColorBlack">
+                                    Custom Software Development
+                                </div>
+                                <p class="mb-5 text-ColorBlack/80 line-clamp-2">
+                                    Custom Software Development is the process of
+                                    conceptualizing, designing, building &amp; deploying
+                                </p>
+                                <a href="/service-details"
+                                    class="inline-flex items-center gap-2 text-base font-bold text-ColorBlack group-hover:text-ColorBlue">
+                                    Find out more
+                                    <span class="transition-all duration-300 ease-in-out group-hover:translate-x-2">
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="section-space">
+        <div class="container-custom">
+            <div class="flex flex-col gap-y-20 lg:gap-y-[100px] xl:gap-y-[120px]">
+                <!-- Content Area Single -->
+                <div
+                    class="grid items-center gap-10 lg:grid-cols-2 lg:gap-24 xl:grid-cols-[1.2fr_minmax(0,_1fr)] xl:gap-[135px]">
+                    <!-- Content Block Left -->
+                    <div class="jos" data-jos_animation="fade-right" data-jos_once="1" data-jos_timingfunction="ease"
+                        data-jos_duration="700" data-jos_delay="500" data-jos_counter="1">
+                        <div>
+                            <div class="mb-5">
+                                <h2 class="text-xl lg:text-2xl">
+                                    Boost the effectiveness of your promotions as well
+                                    as polish your branding
+                                </h2>
+                            </div>
+                            <p>
+                                SINCE 1998, we transform bold business ideas into
+                                exceptional digital products. We ideate, design, and
+                                develop data-driven digital products made to answer
+                                business challenges.
+                            </p>
+                            <p>
+                                We offer 360° services to smoothly guide you on your way
+                                to creating a seamless digital masterpiece projects on
+                                budget and on time.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Content Block Left -->
+                    <!-- Content Block Right -->
+                    <div class="relative jos" data-jos_animation="fade-left" data-jos_once="1"
+                        data-jos_timingfunction="ease" data-jos_duration="700" data-jos_delay="500"
+                        data-jos_counter="1">
+                        <div class="rounded-[10px] bg-[#FCEDCF] p-[30px] lg:p-10 xl:p-[50px]">
+                            <img src="https://masco-html.netlify.app/assets/img/th-1/content-img-1.jpg"
+                                alt="content-img-1" width="426" height="398" class="h-auto w-full rounded-[10px]">
+                        </div>
+
+                    </div>
+                    <!-- Content Block Right -->
+                </div>
+                <!-- Content Area Single -->
+
+                <!-- Content Area Single -->
+                <div
+                    class="grid items-center gap-10 lg:grid-cols-2 lg:gap-24 xl:grid-cols-[1fr_minmax(0,_1.2fr)] xl:gap-[135px]">
+                    <!-- Content Block Left -->
+                    <div class="lg:order-2 jos" data-jos_animation="fade-left" data-jos_once="1"
+                        data-jos_timingfunction="ease" data-jos_duration="700" data-jos_delay="500"
+                        data-jos_counter="1">
+                        <div>
+                            <div class="mb-5">
+                                <h2 class="text-xl lg:text-2xl">
+                                    Discover the latest digital strategies &amp; emerging
+                                    ideas for business growth
+                                </h2>
+                            </div>
+                            <p>
+                                Our brand tenders and marketing mixologists always serve
+                                up unique, design-forward websites coded with today’s
+                                modern technologies
+                            </p>
+                            <ul class="flex flex-col gap-5 font-semibold text-ColorBlack">
+                                <li class="flex items-start">
+                                    <span class="mr-3 inline-block text-xl text-ColorBlue"><i
+                                            class="fa-solid fa-badge-check"></i></span>
+                                    <span>Reach new business opportunities or test your product ideas.</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="mr-3 inline-block text-xl text-ColorBlue"><i
+                                            class="fa-solid fa-badge-check"></i></span>
+                                    <span>Automate your processes and get data-driven business insights.</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="mr-3 inline-block text-xl text-ColorBlue"><i
+                                            class="fa-solid fa-badge-check"></i></span>
+                                    <span>Create lightweight, scalable, and easily accessible cloud solutions.</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Content Block Left -->
+                    <!-- Content Block Right -->
+                    <div class="relative lg:order-1 jos" data-jos_animation="fade-right" data-jos_once="1"
+                        data-jos_timingfunction="ease" data-jos_duration="700" data-jos_delay="500"
+                        data-jos_counter="1">
+                        <div class="rounded-[10px] bg-[#BEF8FC] p-[30px] lg:p-10 xl:p-[50px]">
+                            <img src="https://masco-html.netlify.app/assets/img/th-1/content-img-2.jpg"
+                                alt="content-img-2" width="426" height="398" class="h-auto w-full rounded-[10px]">
+                        </div>
+
+                    </div>
+                    <!-- Content Block Right -->
+                </div>
+                <!-- Content Area Single -->
+            </div>
+        </div>
+        <!-- Section Container -->
+    </div>
+
+    <section class="section-testimonial mb-10">
+        <div class="bg-ColorOffWhite">
+            <div class="section-space">
+                <div class="container-custom">
+                    <div class="jos mb-[60px] xl:mb-20">
+                        <div class="mx-auto max-w-[625px]">
+                            <h2 style="font-size:40px; font-weight: bold;" class="text-center">
+                                Most of our satisfied clients leave their feedback
+                            </h2>
+                        </div>
+                    </div>
+
+                    <div class="grid items-center gap-10 lg:grid-cols-2 xl:gap-20 xxl:grid-cols-[1.1fr_minmax(0,_1fr)]">
+                        <img src="https://masco-html.netlify.app/assets/img/th-1/testimonial-image-1.jpg"
+                            alt="testimonial-image-1" width="636" height="446" class="jos h-auto w-full rounded-2xl"
+                            data-jos_animation="fade-right" />
+                        <div class="jos flex flex-col text-ColorBlack" data-jos_animation="fade-left">
+                            <p class="mt-[30px] text-xl font-semibold leading-[1.33] -tracking-[0.5px] lg:text-2xl">
+                                They’re probably one of the easiest vendors I’ve ever
+                                worked with in the digital space. They have our best
+                                interests in mind. The team went the extra mile in
+                                negotiating costs and delivering within a flexible scope.
+                                They’re customer focused and strong in terms of
+                                development quality.
+                            </p>
+                            <div class="mb-8 lg:mb-[50px]">
+                                <span class="block text-xl font-semibold">Dominika Drońska</span>
+                                <span class="block">Senior Digital Marketing Manager, Abbey Road
+                                    Studios</span>
+                            </div>
+                            <a class='group text-base font-bold capitalize leading-[1.5] hover:text-ColorBlue'
+                                href='/portfolio-details'>Read more reviews
+                                <span class="inline-block transition-all duration-150 group-hover:translate-x-2"><i
+                                        class="fa-solid fa-arrow-right"></i></span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="section-footer">
+
+
+        <div class="py-16 lg:py-20 container">
+            <div class="grid gap-10 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:gap-x-24">
+
+
+
+
+                <div class="flex flex-col gap-4">
+                    <div class="text-xl font-semibold capitalize">Primary Pages</div>
+                    <ul class="flex flex-col gap-2">
+                        <li><a href="/" class="hover:underline">Home</a></li>
+                        <li><a href="/about" class="hover:underline">About Us</a></li>
+                        <li><a href="/services" class="hover:underline">Services</a></li>
+                        <li><a href="/pricing" class="hover:underline">Pricing</a></li>
+                        <li><a href="/contact" class="hover:underline">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="flex flex-col gap-4">
+                    <div class="text-xl font-semibold capitalize">Utility Pages</div>
+                    <ul class="flex flex-col gap-2">
+                        <li><a href="/signup" class="hover:underline">Signup</a></li>
+                        <li><a href="/login" class="hover:underline">Login</a></li>
+                        <li><a href="/error-404" class="hover:underline">404 Not Found</a></li>
+                        <li><a href="/reset-password" class="hover:underline">Password Reset</a></li>
+                    </ul>
+                </div>
+
+                <div class="flex flex-col gap-4">
+                    <div class="text-xl font-semibold capitalize">Resources</div>
+                    <ul class="flex flex-col gap-2">
+                        <li><a href="https://www.example.com/" target="_blank" rel="noopener noreferrer"
+                                class="hover:underline">Support</a></li>
+                        <li><a href="https://www.example.com/" target="_blank" rel="noopener noreferrer"
+                                class="hover:underline">Privacy Policy</a></li>
+                        <li><a href="https://www.example.com/" target="_blank" rel="noopener noreferrer"
+                                class="hover:underline">Terms & Conditions</a></li>
+                        <li><a href="https://www.example.com/" target="_blank" rel="noopener noreferrer"
+                                class="hover:underline">Strategic Finance</a></li>
+                        <li><a href="https://www.example.com/" target="_blank" rel="noopener noreferrer"
+                                class="hover:underline">Video Guide</a></li>
+                </div>
+                </ul>
+            </div>
+
+            <div class="bg-white bg-opacity-25 py-4">
+                <div class="container">
+                    <div class="text-center text-white text-opacity-80">
+                        &copy; Copyright 2024, All Rights Reserved by PixcelsThemes
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </footer>
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+</body>
+
+</html>
